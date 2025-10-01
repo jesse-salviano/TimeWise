@@ -1,2 +1,2 @@
 # TimeWise
-Projeto voltado ao desenvolvimento de uma aplicação voltada a gestão de tempo.
+Projeto voltado ao desenvolvimento de uma aplicação focada em gestão de tempo.
