@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWise - Sobre Nós</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <span class="header-title">Sobre nós</span>
+            <button class="user-btn" onclick="openProfile()">👤</button>
+        </header>
+
+        <!-- Sidebar Menu -->
+        <aside class="sidebar" id="sidebar">
+            <button class="close-menu" onclick="toggleMenu()">✕</button>
+            <nav class="menu">
+                <a href="index.html" class="menu-item">Início</a>
+                <a href="dashboard.html" class="menu-item">Dashboard</a>
+                <a href="calendario.html" class="menu-item">Calendário</a>
+                <a href="preferencias.html" class="menu-item">Preferências</a>
+                <a href="sobre.html" class="menu-item active">Sobre nós</a>
+                <a href="login.html" class="menu-item" onclick="logout()">Sair</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="about-section">
+                <h2>Sobre o TimeWise</h2>
+                <p>TimeWise é um aplicativo completo que combina gestão de tempo com estratégias da psicologia comportamental para combater a procrastinação de forma integrada.</p>
+
+                <h3>Nossas Funcionalidades:</h3>
+                <ul class="features-list">
+                    <li><strong>Planejamento:</strong> Formulário estruturado para mapeamento de rotina</li>
+                    <li><strong>Agenda Inteligente:</strong> Gerenciamento de atividades personalizadas</li>
+                    <li><strong>Técnica Pomodoro:</strong> Timer para otimizar períodos de foco</li>
+                    <li><strong>Modo Foco:</strong> Eliminação de distrações durante atividades</li>
+                    <li><strong>Bem-estar:</strong> Reserva obrigatória de horários para sono</li>
+                    <li><strong>Gamificação:</strong> Sistema de recompensas e badges</li>
+                    <li><strong>Relatórios:</strong> Análise semanal de produtividade</li>
+                    <li><strong>Mensagens Motivacionais:</strong> Dicas diárias para lidar com desânimo</li>
+                </ul>
+
+                <h3>Missão</h3>
+                <p>Transformar a maneira como as pessoas gerenciam seu tempo e combatem a procrastinação através de tecnologia inteligente e psicologia comportamental.</p>
+
+                <h3>Versão</h3>
+                <p>TimeWise v2.0</p>
+
+                <h3>Desenvolvedores</h3>
+                <p>Desenvolvido pela equipe UCHub Gestão e Qualidade de Software</p>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation (Mobile) -->
+        <nav class="bottom-nav">
+            <button class="nav-btn" onclick="navigateTo('dashboard.html')">📊</button>
+            <button class="nav-btn" onclick="navigateTo('index.html')">🏠</button>
+            <button class="nav-btn" onclick="navigateTo('calendario.html')">📅</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

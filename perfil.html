@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWise - Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <span class="header-title">Perfil</span>
+            <button class="user-btn" onclick="openProfile()">👤</button>
+        </header>
+
+        <!-- Sidebar Menu -->
+        <aside class="sidebar" id="sidebar">
+            <button class="close-menu" onclick="toggleMenu()">✕</button>
+            <nav class="menu">
+                <a href="index.html" class="menu-item">Início</a>
+                <a href="dashboard.html" class="menu-item">Dashboard</a>
+                <a href="calendario.html" class="menu-item">Calendário</a>
+                <a href="preferencias.html" class="menu-item">Preferências</a>
+                <a href="sobre.html" class="menu-item">Sobre nós</a>
+                <a href="login.html" class="menu-item" onclick="logout()">Sair</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="profile-section">
+                <div class="profile-header">
+                    <div class="profile-avatar">👤</div>
+                    <div class="profile-info">
+                        <h2 id="profile-nome"></h2>
+                        <p id="profile-email"></p>
+                    </div>
+                </div>
+
+                <div class="profile-details">
+                    <div class="detail-card">
+                        <h3>Informações Pessoais</h3>
+                        <div class="detail-item">
+                            <label>Nome:</label>
+                            <p id="detail-nome"></p>
+                        </div>
+                        <div class="detail-item">
+                            <label>E-mail:</label>
+                            <p id="detail-email"></p>
+                        </div>
+                        <div class="detail-item">
+                            <label>Ocupação:</label>
+                            <p id="detail-ocupacao"></p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>Atividades</h3>
+                        <div class="detail-item">
+                            <label>Total:</label>
+                            <p id="detail-atividades">0</p>
+                        </div>
+                        <div class="detail-item">
+                            <label>Hoje:</label>
+                            <p id="detail-atividades-hoje">0</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>Outras Informações</h3>
+                        <div class="detail-item">
+                            <label>Membro desde:</label>
+                            <p id="detail-data"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-danger" onclick="confirmarLogout()">Sair da Conta</button>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation (Mobile) -->
+        <nav class="bottom-nav">
+            <button class="nav-btn" onclick="navigateTo('dashboard.html')">📊</button>
+            <button class="nav-btn" onclick="navigateTo('index.html')">🏠</button>
+            <button class="nav-btn" onclick="navigateTo('calendario.html')">📅</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWise - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <span class="header-title">Dashboard</span>
+            <button class="user-btn" onclick="openProfile()">👤</button>
+        </header>
+
+        <!-- Sidebar Menu -->
+        <aside class="sidebar" id="sidebar">
+            <button class="close-menu" onclick="toggleMenu()">✕</button>
+            <nav class="menu">
+                <a href="index.html" class="menu-item">Início</a>
+                <a href="dashboard.html" class="menu-item active">Dashboard</a>
+                <a href="calendario.html" class="menu-item">Calendário</a>
+                <a href="preferencias.html" class="menu-item">Preferências</a>
+                <a href="sobre.html" class="menu-item">Sobre nós</a>
+                <a href="login.html" class="menu-item" onclick="logout()">Sair</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dica -->
+            <section class="dica-section">
+                <div class="dica-header">
+                    <span class="star">💡</span>
+                    <h2>Dica do Dia</h2>
+                </div>
+                <p id="dica-dashboard"></p>
+            </section>
+
+            <!-- Chart Section -->
+            <section class="chart-section">
+                <h3>Distribuição de Atividades</h3>
+                <canvas id="tempoChart"></canvas>
+                <div class="legend-section" id="legend-section"></div>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation (Mobile) -->
+        <nav class="bottom-nav">
+            <button class="nav-btn" onclick="navigateTo('dashboard.html')">📊</button>
+            <button class="nav-btn" onclick="navigateTo('index.html')">🏠</button>
+            <button class="nav-btn" onclick="navigateTo('calendario.html')">📅</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

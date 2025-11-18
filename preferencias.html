@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWise - Preferências</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <span class="header-title">Preferências</span>
+            <button class="user-btn" onclick="openProfile()">👤</button>
+        </header>
+
+        <!-- Sidebar Menu -->
+        <aside class="sidebar" id="sidebar">
+            <button class="close-menu" onclick="toggleMenu()">✕</button>
+            <nav class="menu">
+                <a href="index.html" class="menu-item">Início</a>
+                <a href="dashboard.html" class="menu-item">Dashboard</a>
+                <a href="calendario.html" class="menu-item">Calendário</a>
+                <a href="preferencias.html" class="menu-item active">Preferências</a>
+                <a href="sobre.html" class="menu-item">Sobre nós</a>
+                <a href="login.html" class="menu-item" onclick="logout()">Sair</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="form-section">
+                <h2>Minhas Preferências</h2>
+
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome" class="input-field">
+                </div>
+
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="email" placeholder="Seu email" class="input-field">
+                </div>
+
+                <div class="form-group">
+                    <label>Ocupação</label>
+                    <select id="ocupacao" class="input-field">
+                        <option value="">Selecione sua ocupação</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="profissional">Profissional</option>
+                        <option value="autonomo">Autônomo</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Hora de Dormir</label>
+                    <input type="time" id="hora-dormir" class="input-field">
+                </div>
+
+                <div class="form-group">
+                    <label>Hora de Acordar</label>
+                    <input type="time" id="hora-acordar" class="input-field">
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="notificacoes"> Receber notificações
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="modo-escuro" onchange="toggleModoEscuro()"> Modo escuro
+                    </label>
+                </div>
+
+                <button type="button" class="btn-primary" onclick="salvarPreferencias()">Salvar Preferências</button>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation (Mobile) -->
+        <nav class="bottom-nav">
+            <button class="nav-btn" onclick="navigateTo('dashboard.html')">📊</button>
+            <button class="nav-btn" onclick="navigateTo('index.html')">🏠</button>
+            <button class="nav-btn" onclick="navigateTo('calendario.html')">📅</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
