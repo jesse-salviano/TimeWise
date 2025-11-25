@@ -1,4 +1,4 @@
-let usuarios = [{email: "user", password: "1234"}];
+let usuarios = [{email: "user@gmail.com", password: "1234"}];
 let atividadesGlobal = [];
 let usuarioAtual = null;
 let dataSelecionadaAtual = null;
