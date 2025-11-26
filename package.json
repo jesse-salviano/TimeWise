@@ -3,6 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "echo 'no build script'"
+    "start": "http-server -p 8000 -c-1",
+    "build": "echo 'no build script'",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "description": "Projeto voltado ao desenvolvimento de uma aplicação focada em gestão de tempo.",
+  "main": "cypress.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lacielton/TimeWise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lacielton/TimeWise/issues"
+  },
+  "homepage": "https://github.com/Lacielton/TimeWise#readme",
+  "devDependencies": {
+    "@storybook/addon-docs": "^10.0.8",
+    "@storybook/html-vite": "^10.0.8",
+    "cypress": "^15.7.0",
+    "http-server": "^14.1.1",
+    "storybook": "^10.0.8"
   }
 }
