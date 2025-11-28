@@ -352,10 +352,6 @@ Visualize componentes em http://localhost:6006
 4. Push (`git push origin feature/nova-feature`)
 5. Abra um Pull Request
 
-##  Licença
-
-Licença ISC - veja o arquivo `LICENSE` para detalhes.
-
 ##  GitHub Pages
 Link para a landing page do projeto
 (https://jesse-salviano.github.io/TimeWise/login.html)
